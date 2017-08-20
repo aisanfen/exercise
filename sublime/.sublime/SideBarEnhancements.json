@@ -1,0 +1,6 @@
+{
+    "":{
+        "url_testing":"http://localhost:80/sublime",
+        "url_production":"http://productiontld2"
+    }
+}

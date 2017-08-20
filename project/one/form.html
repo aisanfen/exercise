@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" Content="text/html;charset=utf8"/>
+    <meta charset="utf-8">
+    <title>你的sql注入</title>
+
+    <style>
+        #w{
+            display:table;width:300px;height:300px;
+            margin-left: 650px;
+            margin-top: 300px;
+        }
+        #c{
+            display:table-cell; vertical-align:middle;
+        }
+
+        body{
+            background: url(http://p1.bpimg.com/4851/077469b2b7c97f2b.jpg) no-repeat 50% 0%;
+            background-size: 1200px 700px;
+        }
+    </style>
+</head>
+<body>
+
+
+<enter>
+    <div id = w>
+        <div id="c">
+            <form name="LOGIN_FORM" method="post" action="perfect.php">
+                你的名字:
+                <input type="text" name="username" value="" size=30 /><br /><br />
+                你的密钥:
+                <input type="text" name="password" value="" size=30 /><br /><br />
+                <input type="submit" value="登录" />
+            </form>
+        </div>
+    </div>
+</enter>
+</body>
+</html>

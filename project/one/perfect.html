@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sql注入</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        font: 16px/20px Microsoft Himalaya;
+    }
+    .all{
+        width: 100%;
+        height: 100%;
+        padding: 100px 0;
+        position: fixed;
+        opacity: 0.8;/*设置div元素的不透明等级*/
+        background: linear-gradient(to bottom right,#9ad4e0,#afd4dd,#e7e5d0,#8fc4d2);
+        background: -webkit-linear-gradient(to bottom right,#56c4ff,#9ee3ff);
+    }
+    .inter
+    {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .inter h1{
+        text-align: center;
+        color: #FFFFFF;
+        font-weight: 700;
+    }
+    .inter input{
+        width: 300px;
+        display: block;/*使段落生出内边框*/
+        height: 36px;
+        border: 0;
+        outline: 0;
+       padding: 6px 10px;
+        line-height: 24px;
+        margin: 20px auto;
+        -webkit-transition: all 0s ease-in 0.1ms;/*渐变属性*/
+        -moz-transition: all 0s ease-in 0.1s;
+        transition: all 0s ease-in 0.1ms;
+    }
+    .inter input[type="text"] , .inter input[type="password"]  {
+        background-color: #FFFFFF;
+        font-size: 16px;
+        color: #50a3a2;
+    }
+    .inter input[type='submit'] {
+        font-size: 16px;
+        letter-spacing: 2px;
+        color: #FFFFFF;
+        background-color: #afd4dd;
+    }
+    </style>
+<body>
+<div class="all">
+    <div class="inter">
+        <form action="perfect.php" method="post">
+            <h1> Welcome</h1>
+
+            <input type="text" name="username" class="username"  placeholder="user" >
+            <br>
+            <input type="password" name="password" class="password" placeholder="password">
+            <input type="submit" value="LOGIN">
+        </form>
+    </div>
+
+</div>
+</body>
+</html>
